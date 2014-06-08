@@ -1,0 +1,74 @@
+<html>
+<head>
+	<!--HEAD-->
+	<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+	<title>Mensajeria</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="ibody">
+		<div class="jumbotron">
+			<h1>Compartir Archivos</h1>
+		</div>
+		
+		<div class="fcontacto">
+			<form enctype="multipart/form-data" method="POST" name="fenviar" id="fenviar">
+				<label>Nombre Usuario <input type="text" name="username" id="username" class="form-control"></label>
+				<label>Nombre Contacto <input type="text" name="contactname" id="contactname" class="form-control"></label>
+				<label>Direccion IP Contacto <input type="text" name="ipcontacto" id="ipcontacto" class="form-control"></label>
+				<label>Seleccionar Archivo <input type="file" name="message" id="message" size="40"></label>
+				
+				<input type="submit" value="Enviar Mensaje" class="btn btn-info">
+			</form>
+			
+			
+			<label>
+				<form action="formulario.html">
+    				<input type="submit" value="Agregar Contacto" class="btn btn-info">
+				</form>
+			</label>
+			
+			<label>
+				<form action="listacontactos.html">
+    				<input type="submit" value="Ver Contactos (Link)" class="btn btn-info">
+				</form>
+			</label>
+
+			<label>
+				<form>
+					<input type="button" id="contactosBtn" class="btn btn-info" value="Ver Contactos (Present Page)">
+				</form>
+			</label>
+			
+			<div class="fcontacto" style="display: none;" id="contactos">
+    			<ul id="lcontacto">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--END-->
+	<script type="text/javascript">
+	
+	var buttonContactos = document.getElementById('contactosBtn');
+
+	buttonContactos.onclick = function()
+	{
+    	var div = document.getElementById('contactos');
+    	if (div.style.display !== 'none')
+    	{
+        	div.style.display = 'none';
+        	buttonContactos.setAttribute('value','Ver Contactos (Present Page)');
+        }
+    	else 
+    	{
+        	div.style.display = 'block';
+        	$("#lcontacto").load("/contacto.html");
+        	buttonContactos.setAttribute('value','Esconder Contactos (Present Page)');
+    	}
+	};
+	</script>
+
+</body>
+</html>

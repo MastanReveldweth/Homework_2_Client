@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<contactos>
+    <contacto>
+        <name>Dan</name>
+        <ip>123.9.9.7</ip>
+        <port>123</port>
+    </contacto>
+    <contacto>
+        <name>Andres</name>
+        <ip>123.9.9.7</ip>
+        <port>124</port>
+    </contacto>
+    <contacto>
+        <name>Pepo</name>
+        <ip>134.7.7.6</ip>
+        <port>125</port>
+    </contacto>
+    <contacto>
+        <name>PC1</name>
+        <ip>192.168.1.3</ip>
+        <port>11</port>
+    </contacto>
+    <contacto>
+        <name>PC2</name>
+        <ip>192.168.1.4</ip>
+        <port>12</port>
+    </contacto>
+</contactos>

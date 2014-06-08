@@ -1,0 +1,41 @@
+<html>
+<head>
+	<!--HEAD-->
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="ibody">
+		<div class="jumbotron">
+			<h1>Agregar Contacto</h1>
+		</div>
+		<div class="fcontacto">
+			<form method="POST" name="fcontacto" id="fcontacto">
+				<label>Nombre <input type="text" name="name" id="name" class="form-control"></label>
+				
+				<label>Direccion IP <input type="text" name="ip" id="direccion_ip" class="form-control"></label>
+				
+				<label>Puerto <input type="text" name="puerto" id="puerto" class="form-control"></label>
+				
+				<input type="submit" value="Guardar Contacto" class="btn btn-info">
+			</form>
+			
+			<label>
+			<form action="listacontactos.html">
+    			<input type="submit" value="Ver Contactos" class="btn btn-info">
+			</form>
+			</label>
+			
+			<label>
+			<form action="mensajeria.html">
+    			<input type="submit" value="Enviar Mensaje" class="btn btn-info">
+			</form>
+			</label>
+		</div>
+
+	</div>
+	<!--END-->
+</body>
+</html>
