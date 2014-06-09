@@ -4,4 +4,4 @@ Homework 2
 Segunda tarea Redes
 Integrantes:
 - Dan Ponce
-- Andrés Berrios
+- Andrés Berríos
